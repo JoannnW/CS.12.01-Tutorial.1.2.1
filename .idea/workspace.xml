@@ -20,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2UadCHxPKQhi6BNol5LLUCFbatU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,6 +34,11 @@
     "Application.Main.executor": "Run",
     "Application.StepTracker.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.StepTrackerTest.activeDaysNoDays.executor": "Run",
+    "JUnit.StepTrackerTest.addDailyStepsEqualToActiveStepRequirement.executor": "Run",
+    "JUnit.StepTrackerTest.addDailyStepsIncreasesDay.executor": "Run",
+    "JUnit.StepTrackerTest.executor": "Run",
+    "JUnit.StepTrackerTest.stepsForActiveDays.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -43,25 +48,63 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.StepTracker">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="JUnit.StepTrackerTest">
+    <configuration name="StepTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS.12.01-Tutorial.1.2.1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StepTrackerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepTracker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StepTracker" />
+    <configuration name="StepTrackerTest.activeDaysNoDays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS.12.01-Tutorial.1.2.1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StepTrackerTest" />
+      <option name="METHOD_NAME" value="activeDaysNoDays" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StepTrackerTest.addDailyStepsEqualToActiveStepRequirement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS.12.01-Tutorial.1.2.1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StepTrackerTest" />
+      <option name="METHOD_NAME" value="addDailyStepsEqualToActiveStepRequirement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StepTrackerTest.addDailyStepsIncreasesDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS.12.01-Tutorial.1.2.1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StepTrackerTest" />
+      <option name="METHOD_NAME" value="addDailyStepsIncreasesDay" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StepTrackerTest.stepsForActiveDays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS.12.01-Tutorial.1.2.1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StepTrackerTest" />
+      <option name="METHOD_NAME" value="stepsForActiveDays" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StepTracker" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StepTrackerTest" />
+        <item itemvalue="JUnit.StepTrackerTest.stepsForActiveDays" />
+        <item itemvalue="JUnit.StepTrackerTest.activeDaysNoDays" />
+        <item itemvalue="JUnit.StepTrackerTest.addDailyStepsEqualToActiveStepRequirement" />
+        <item itemvalue="JUnit.StepTrackerTest.addDailyStepsIncreasesDay" />
       </list>
     </recent_temporary>
   </component>
