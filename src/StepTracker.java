@@ -1,57 +1,48 @@
+import java.util.ArrayList;
 public class StepTracker{
     //properties
     private int minSteps;
-    private int activeDays;
-    private int steps;
-    private int days;
-    private int stepsForActiveDay;
+    private ArrayList<Integer> stepsPerDay;
     private int totalSteps;
-    //constructor
-    public StepTracker(int minSteps){
-        this.minSteps=minSteps;
-        activeDays=0;
-        steps=0;
-        days=0;
-        stepsForActiveDay=0;
-        totalSteps=0;
-    }
-    //get__ methods for each property(3)
-    public int getMinSteps(){
-        return minSteps;
-    }
-    public int getActiveDays(){
-        return activeDays;
-    }
-    public int getSteps(){
-        return steps;
-    }
+
     public int getDays(){
-        return days;
+        return stepsPerDay.toArray().length;
     }
     public int getStepsForActiveDay(){
-        return stepsForActiveDay;
+        return minSteps;
     }
     public int getTotalSteps(){
-        return steps;
-    }
-
-    //Methods
-    public void addDailySteps(int steps){
-        if (steps>minSteps){
-            activeDays++;
+        totalSteps=0;
+        for (int steps:stepsPerDay){
+            totalSteps+=steps;
         }
-        days++;
-        this.steps+=steps;
+        return totalSteps;
+    }
+    public int getActiveDays(){
+        return activeDays();
+    }
+    public StepTracker(int min){
+        this.minSteps=min;
+        stepsPerDay=new ArrayList<Integer>();
+    }
+    public void addDailySteps(int steps){
+        stepsPerDay.add(steps);
     }
     public int activeDays(){
+        int activeDays=0;
+        for (int steps:stepsPerDay){
+            if (steps>=minSteps){
+                activeDays++;
+            }
+        }
         return activeDays;
     }
-    public double averageSteps(){
-        if (days==0){
-            return 0.0;
+    public int averageSteps(){
+        if (stepsPerDay.isEmpty()) {
+            return 0;
         }
-        return (double) steps /days;
+        return totalSteps/stepsPerDay.toArray().length;
+        }
     }
-}
 
 
